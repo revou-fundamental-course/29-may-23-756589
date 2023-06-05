@@ -1,0 +1,81 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar {
+    display: flex;
+}
+.logo{
+    height:2em
+}
+.nav-bar{
+    display:flex;
+    border: 1px solid black;
+    border-radius:5px;
+}
+.nav-item{
+    padding:5px 1em;
+    width:80px;
+    border-right: 1px solid black;
+    text-align:center;
+    cursor:pointer
+}
+.nav-item:hover{
+    background:lightblue;
+    margin:-3px;
+}
+.nav-bar:last-child{
+    border-right:none
+}
+.wrapper{
+    display: flex;
+}
+.headquarters-image-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin: 0 1em
+}
+.headquarters-image{
+    height: 5em;
+    width:5em;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+@media only screen and (max-width:600px){
+    header{
+        flex-direction:column
+    }
+    .nav-bar{
+        width:100px;
+        flex-direction:column;
+    }
+    .logo{
+        margin-bottom:14px;
+    }
+
+}
+#kirim{
+    padding:0.5em;
+    width:120px;
+    border:none;
+    cursor:auto;
+}
+
+.message-us-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.form-output {
+    margin-left: 100px;
+  
+}
+
+.footer{
+    position:fixed;
+    bottom:0;
+    right:0;
+}
