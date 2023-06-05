@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"alt="revoU Logo"
+         class="logo">
+        <div class="nav-bar">
+            <div class="nav-item">Home</div>
+            <div class="nav-item">Our Profile</div>
+            <div class="nav-item">Portofolio</div>
+            <div class="nav-item">Messege Us</div>
+        </div> 
+        
+ </header>
+
+        <div>
+        <main class="main-content">
+        <h1>Hi <span id="nama"></span>, Welcome To Website!</h1>
+
+        <h2>Ini adalah website latihan pertama</h2>
+
+        </main>
+        </div>
+        <div>
+            <img
+            class="img-slideshow"
+            src="https://source.unsplash.com/random/1080x400?landscape&sig=1"
+            />
+            <img
+            class="img-slideshow"
+            src="https://source.unsplash.com/random/1080x400?landscape&sig=2"
+            />
+            <img
+            class="img-slideshow"
+            src="https://source.unsplash.com/random/1080x400?landscape&sig=3"
+            />
+        
+        </div>
+
+    <div id="headquarters-section">
+        <h1>Headquarters</h1>
+        <div class=wrapper>
+
+        <div class="headquarters-image-container">
+        <div class="headquarters-image"></div>
+        <p>Jakarta</p>
+        </div>
+
+        <div class="headquarters-image-container">
+        <div class="headquarters-image"></div>
+        <p>Bandung</p>
+        </div>
+
+        <div class="headquarters-image-container">
+        <div class="headquarters-image"></div>
+        <p>Surabaya</p>
+        </div>
+        
+        </div>
+    </div>
+    
+    <h1>Message us</h1>
+    <div class="message-us-section">
+        <form name="message-form" onsubmit="return validateForm()">
+            
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input placeholder="Nama" id="input-nama" type="text" name="full-name"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="birth-date"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="laki-laki">
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female" name="gender" value="perempuan">
+                        <label for="female">Perempuan</label>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td>
+                        <textarea placeholder="pesan" name="messages"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="kirim" />
+        </form>  
+    
+        <div class="form-output">
+            <p>Nama: <span id="nama-lengkap-pengirim"></span></p>
+            <p>Tanggal Lahir: <span id="birth-date-pengirim"></span></p>
+            <p>Jenis Kelamin: <span id="gender-pengirim"></span></p>
+            <p>Pesan: <span id="messages-pengirim"></span></p>
+        </div>
+    </div>    
+    
+    <footer class="footer">Created by Revou</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
